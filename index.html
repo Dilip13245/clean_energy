@@ -33,7 +33,25 @@
   <link href=" css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
-
+  <style>
+    .hero_area {
+      position: relative;
+      min-height: 100vh;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url("images/banner.jpg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 0;
+    }
+  </style>
 </head>
 
 <body>
@@ -80,13 +98,8 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="container ">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="img-box">
-                    <img src="images/slider-img.png" alt="">
-                  </div>
-                </div>
-                <div class="col-md-6">
+              <div class="row justify-content-center">
+                <div class="col-md-7">
                   <div class="detail-box">
                     <h1>
                       Coolent gel for EDM wire cutting
@@ -107,13 +120,74 @@
           </div>
           <div class="carousel-item ">
             <div class="container ">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="img-box">
-                    <img src="images/slider-img.png" alt="">
+              <div class="row justify-content-center">
+                <div class="col-md-7">
+                  <div class="detail-box">
+                    <h1>
+                      Water tank cover
+                    </h1>
+                    <p>
+                      A water tank cover protects the tank from contaminants, debris, and environmental conditions,
+                      ensuring clean and safe water storage.
+                    </p>
+                    <div class="btn-box">
+                      <!-- <a href="" class="btn1">
+                          Contact Us
+                        </a> -->
+                    </div>
                   </div>
                 </div>
-                <div class="col-md-6">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="container ">
+              <div class="row justify-content-center">
+                <div class="col-md-7">
+                  <div class="detail-box">
+                    <h1>
+                      Water tank cover
+                    </h1>
+                    <p>
+                      A water tank cover protects the tank from contaminants, debris, and environmental conditions,
+                      ensuring clean and safe water storage.
+                    </p>
+                    <div class="btn-box">
+                      <!-- <a href="" class="btn1">
+                          Contact Us
+                        </a> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="container ">
+              <div class="row justify-content-center">
+                <div class="col-md-7">
+                  <div class="detail-box">
+                    <h1>
+                      Water tank cover
+                    </h1>
+                    <p>
+                      A water tank cover protects the tank from contaminants, debris, and environmental conditions,
+                      ensuring clean and safe water storage.
+                    </p>
+                    <div class="btn-box">
+                      <!-- <a href="" class="btn1">
+                          Contact Us
+                        </a> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="container ">
+              <div class="row justify-content-center">
+                <div class="col-md-7">
                   <div class="detail-box">
                     <h1>
                       Water tank cover
@@ -163,7 +237,9 @@
         <ol class="carousel-indicators">
           <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
           <li data-target="#customCarousel1" data-slide-to="1"></li>
-          <!-- <li data-target="#customCarousel1" data-slide-to="2"></li> -->
+          <li data-target="#customCarousel1" data-slide-to="2"></li>
+          <li data-target="#customCarousel1" data-slide-to="3"></li>
+          <li data-target="#customCarousel1" data-slide-to="4"></li>
         </ol>
       </div>
 
@@ -174,13 +250,12 @@
   <!-- service section -->
   <section class="service_section layout_padding">
     <div class="container">
-      <div class="heading_container">
+      <div class="heading_container mb-4">
         <h2>
           Our Services
         </h2>
+        <img class="bottom-shape m-auto" src="./images/bottom-bar.png" alt="Bottom Shape">
         <p>
-          <!-- consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p> -->
       </div>
       <div class="row justify-content-center">
         <div class="col-md-4 col-lg-3 mb-4">
@@ -296,7 +371,51 @@
       </div> -->
     </div>
   </section>
+  <section class="service_section layout_padding gray_bg">
+    <div class="container">
+      <div class="heading_container mb-4">
+        <h2>
+          Our Products
+        </h2>
+        <img class="bottom-shape m-auto" src="./images/bottom-bar.png" alt="Bottom Shape">
+        <p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-6 mb-4">
+          <div class="card w-100">
+            <div class="image-wrapper">
+              <img src="./images/about-img.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body text-left">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
+                ullamcorper mattis, pulvinar dapibus leo.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 mb-4">
+          <div class="card w-100">
+            <div class="image-wrapper">
+              <img src="./images/case-1.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body text-left">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
+                ullamcorper mattis, pulvinar dapibus leo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class=" btn-box">
+          <a href="/service.html">
+            View More
+          </a>
+        </div> -->
+    </div>
+  </section>
+
   <!-- end service section -->
+
 
   <!-- about section -->
 
@@ -305,10 +424,11 @@
       <div class="row">
         <div class="col-md-6">
           <div class=" detail-box">
-            <div class="heading_container">
+            <div class="heading_container mb-4">
               <h2>
                 About Us
               </h2>
+              <img class="bottom-shape " src="./images/bottom-bar.png" alt="Bottom Shape">
             </div>
             <p>
               Welcome to <strong>Clean Energy</strong>, a leading Import & Export Trading Company based in Veraval,
@@ -337,12 +457,15 @@
 
   <!-- case section -->
 
-  <section class="case_section layout_padding Gallery_sec">
+  <section class="case_section layout_padding Gallery_sec gray_bg">
     <div class="container">
-      <div class="heading_container">
+      <div class="heading_container mb-4">
         <h2>
           Our Products Gallery
         </h2>
+        <img class="bottom-shape m-auto" src="./images/bottom-bar.png" alt="Bottom Shape">
+        <p>
+        </p>
       </div>
       <div class="row">
         <div class="col-12">
@@ -369,48 +492,51 @@
       </div>
     </div>
   </section>
+
   <!-- --------------------------------slider section -------------------------- -->
-  <section class=" maincard_slider">
+  <section class="layout_padding maincard_slider company_logo_slider">
     <div class="container">
-      <div class="heading_container text-center justify-content-center align-items-center">
-        <h2 class="text-center ">
+      <div class="heading_container mb-4 text-center justify-content-center align-items-center">
+        <h2>
           Our Valuable Clients
         </h2>
+        <img class="bottom-shape m-auto" src="./images/bottom-bar.png" alt="Bottom Shape">
+        <p>
+        </p>
       </div>
-      <div class="row mt-md-5 mt-4 mb-5" data-aos="fade-up" data-aos-duration="1000">
-        <div class="card-boxs my-slider">
-          <div class="slider_card">
-            <div class=" d-flex align-items-center">
-              <img src="./images/client.jpg" alt="img" class="card_ImG">
-              <h6 class=" font-weight-bolder mb-0 pl-3">Dilip Chaudhary</h6>
-            </div>
+      <div class="row mb-5 pb-5" data-aos="fade-up" data-aos-duration="1000">
+        <div class=" card-boxs my-slider">
+          <div class="d-flex align-items-center ">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="230" alt="" />
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="230" alt="" />
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="230" alt="" />
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="230" alt="" />
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="230" alt="" />
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="230" alt="" />
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="230" alt="" />
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="230" alt="" />
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="230" alt="" />
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="230" alt="" />
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="230" alt="" />
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="230" alt="" />
           </div>
-          <div class="slider_card">
-            <div class=" d-flex align-items-center">
-              <img src="./images/client.jpg" alt="img" class="card_ImG">
-              <h6 class=" font-weight-bolder mb-0 pl-3">Dilip Chaudhary</h6>
-            </div>
-          </div>
-          <div class="slider_card">
-            <div class=" d-flex align-items-center">
-              <img src="./images/client.jpg" alt="img" class="card_ImG">
-              <h6 class=" font-weight-bolder mb-0 pl-3">Dilip Chaudhary</h6>
-            </div>
-          </div>
-          <div class="slider_card">
-            <div class=" d-flex align-items-center">
-              <img src="./images/client.jpg" alt="img" class="card_ImG">
-              <h6 class=" font-weight-bolder mb-0 pl-3">Dilip Chaudhary</h6>
-            </div>
-          </div>
-          <div class="slider_card">
-            <div class=" d-flex align-items-center">
-              <img src="./images/client.jpg" alt="img" class="card_ImG">
-              <h6 class=" font-weight-bolder mb-0 pl-3">Dilip Chaudhary</h6>
-            </div>
+          <div class="d-flex align-items-center">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="230" alt="" />
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="230" alt="" />
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="230" alt="" />
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="230" alt="" />
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="230" alt="" />
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="230" alt="" />
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="230" alt="" />
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="230" alt="" />
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="230" alt="" />
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="230" alt="" />
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="230" alt="" />
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="230" alt="" />
           </div>
         </div>
       </div>
+    </div>
     </div>
   </section>
   <!-- end case section -->
@@ -599,11 +725,11 @@
     // -----------------------slider-------------------
     $(".my-slider").slick({
       infinite: true,
-      slidesToShow: 3,
-      slidesToScroll: 1,
+      slidesToShow: 1,
+      slidesToScroll: 10,
       arrows: false,
       dots: false,
-      autoplaySpeed: 1000,
+      autoplaySpeed: 2000,
       infinite: true,
       autoplay: true,
       responsive: [
