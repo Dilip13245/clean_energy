@@ -25,7 +25,58 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+  <style>
+    .service_section {
+      padding: 60px 20px;
+      background-color: #f9f9f9;
+    }
 
+    .heading_container h2 {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+
+    .design {
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    }
+
+    .design:hover {
+      box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    }
+
+    .service-item {
+      padding: 20px 0;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .service-item:last-child {
+      border-bottom: none;
+    }
+
+    .service-title {
+      font-size: 1.75rem;
+      color: #007bff;
+      margin-bottom: 40px;
+      font-style: italic;
+    }
+
+    .service-img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .service-item p {
+      font-size: 1rem;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .detailed-text ul {
+      text-align: left;
+      list-style: disc;
+    }
+  </style>
 </head>
 
 <body class="sub_page">
@@ -58,6 +109,9 @@
                 <a class="nav-link" href="service.html">Services</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="product.html">Products</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="contact.html">Contact Us</a>
               </li>
             </ul>
@@ -68,128 +122,81 @@
     <!-- end header section -->
   </div>
   <!-- service section -->
-  <section class="service_section layout_padding">
+  <section class="service_section layout_padding gray_bg">
     <div class="container">
-      <div class="heading_container mb-4">
-        <h2>
-          Our Services
-        </h2>
-        <img class="bottom-shape " src="./images/bottom-bar.png" alt="Bottom Shape">
+      <div class="heading_container mb-4 text-center">
+        <h2>Our Services</h2>
+        <img class="bottom-shape" src="./images/bottom-bar.png" alt="Bottom Shape">
+        <p class="text-muted">
+          Discover a range of custom services designed to meet your specific needs and enhance your experience with
+          innovative solutions.
+        </p>
       </div>
-      <div class="row justify-content-center py-md-5 py-4">
-        <div class="col-md-4 col-lg-3 mb-4">
-          <div class="box animate-card">
-            <div class="img-box">
-              <img src="images/s1.png" alt="">
+
+      <div class="service-item mb-5">
+        <div class="design card border-4 p-3 ">
+          <div class="row align-items-center">
+            <div class="col-lg-4 mb-3 mb-lg-0">
+              <img src="./images/about-img.jpg" alt="Custom Equipment Manufacturing" class="service-img">
             </div>
-            <div class="detail-box">
-              <h5>
-                Custome Equpment Manufacturing
-              </h5>
-              <!-- <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-              </p> -->
-              <!-- <a href="">
-                <span>
-                  Read More
-                </span>
-                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-              </a> -->
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-lg-3 mb-4">
-          <div class="box animate-card">
-            <div class="img-box">
-              <img src="images/s2.png" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Coolant Gel
-              </h5>
-              <!-- <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-              </p> -->
-              <!-- <a href="">
-                <span>
-                  Read More
-                </span>
-                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-              </a> -->
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-lg-3 mb-4">
-          <div class="box animate-card">
-            <div class="img-box">
-              <img src="images/s3.png" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Water Tenk
-              </h5>
-              <!-- <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-              </p> -->
-              <!-- <a href="">
-                <span>
-                  Read More
-                </span>
-                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-              </a> -->
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-lg-3 mb-4">
-          <div class="box animate-card">
-            <div class="img-box">
-              <img src="images/s4.png" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Gas Regulators
-              </h5>
-              <!-- <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-              </p> -->
-              <!-- <a href="">
-                <span>
-                  Read More
-                </span>
-                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-              </a> -->
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-lg-3 mb-4">
-          <div class="box animate-card">
-            <div class="img-box">
-              <img src="images/s4.png" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Custom Automation Circuits
-              </h5>
-              <!-- <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-              </p> -->
-              <!-- <a href="">
-                <span>
-                  Read More
-                </span>
-                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-              </a> -->
+            <div class="detailed-text col-lg-8">
+              <h3 class="service-title">Repair and maintenance service</h3>
+              <ul>
+
+                <li>
+                  We specialize in creating custom equipment tailored to your specific business requirements. Our
+                  advanced
+                  designs focus on maximizing efficiency, durability, and performance.
+                </li>
+                <li>
+                  From concept development to production, our process ensures precision engineering, rigorous quality
+                  control, and innovative technology integration. Trust us to deliver equipment that drives productivity
+                  and
+                  adds value to your operations.
+                </li>
+                <li>
+                  From concept development to production, our process ensures precision engineering, rigorous quality
+                  control, and innovative technology integration. Trust us to deliver equipment that drives productivity
+                  and
+                  adds value to your operations.
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
-      <div class="btn-box">
-        <!-- <a href="/service.html">
-          View More
-        </a> -->
+
+      <div class="service-item mb-5">
+        <div class="design card border-4 p-3">
+          <div class="row align-items-center">
+            <div class="col-lg-4 mb-3 mb-lg-0">
+              <img src="./images/case-1.jpg" alt="Consultation Services" class="service-img">
+            </div>
+            <div class="detailed-text col-lg-8">
+              <h3 class="service-title">Third parth installation services</h3>
+              <ul>
+
+                <li>
+                  Our expert consultation and design services provide tailored solutions to enhance your business
+                  efficiency. We collaborate closely with you to develop scalable, sustainable designs.
+                </li>
+                <li>
+                  From initial concept discussions to full implementation plans, we focus on creating designs that
+                  balance
+                  innovation, usability, and cost-effectiveness.
+                </li>
+                <li>
+                  From initial concept discussions to full implementation plans, we focus on creating designs that
+                  balance
+                  innovation, usability, and cost-effectiveness.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
   </section>
+
   <!-- end service section -->
 
   <div class="footer_container">
@@ -223,6 +230,9 @@
                 </a>
                 <a class="" href="service.html">
                   Services
+                </a>
+                <a class="" href="product.html">
+                  Products
                 </a>
                 <a class="" href="contact.html">
                   Contact Us
