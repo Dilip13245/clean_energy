@@ -396,7 +396,9 @@ a:focus {
   padding: 15px;
   border-radius: 10px;
   -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;  position: relative;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  position: relative;
   overflow: hidden;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -1216,7 +1218,8 @@ a:focus {
 }
 .bottom-shape {
   margin-top: -21px;
-  width: 430px;
+  max-width: 430px;
+  width: 100%;
 }
 
 .card-title {
@@ -1245,7 +1248,8 @@ a:focus {
   overflow: hidden;
   border: 1px solid #e7e7e7;
   overflow: hidden;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;  transition: all 0.5s ease-out;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: all 0.5s ease-out;
   cursor: pointer;
   cursor: pointer;
   transition: all 0.5s;
@@ -1274,4 +1278,91 @@ a:focus {
 }
 strong {
   color: #1da1f2;
+}
+/* ------------------- */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+.company_logo_slider .slider {
+  background: white;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.company_logo_slider .slider::before,
+.company_logo_slider .slider::after {
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.company_logo_slider .slider::before {
+  left: 0;
+  top: 0;
+}
+
+.company_logo_slider .slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.company_logo_slider .slide-track {
+  display: flex;
+  width: calc(250px * 14); /* 7 original + 7 duplicate slides */
+  animation: scroll 20s linear infinite;
+}
+
+.company_logo_slider .slide {
+  height: 100px;
+  width: 250px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.company_logo_slider .slide img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+.product_main_img {
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.product_main_img img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  /* border-radius: 6px; */
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.product_main_img:hover img {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+.product_right_img img {
+  height: 225px;
 }
