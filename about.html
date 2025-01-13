@@ -72,11 +72,11 @@
 
   <div class="hero_area">
     <!-- header section strats -->
-    <header class="header_section">
+    <header class="header_section header custom_header">
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
-          <a href="#" class="navbar-brand"> <img src="images/final.png" alt="" style="height: 100px;"></a>
-
+          <a href="index.html" class="navbar-brand"> <img src="images/Clean-Energy-Logo-transformed.svg" alt=""
+              class="logo_img"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class=""> </span>
@@ -85,19 +85,19 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav  ">
               <li class="nav-item ">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="index.html">Home </a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="about.html"> About</a>
+                <a class="nav-link" href="about.html"> About <span class="sr-only">(current)</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="service.html">Services </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="service.html">Services</a>
+                <a class="nav-link" href="product.html">Products </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="product.html">Products</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact Us</a>
+              <li class="nav-item ">
+                <a class="nav-link" href="contact.html">Contact Us </span></a>
               </li>
             </ul>
           </div>
@@ -108,7 +108,7 @@
   </div>
 
   <!-- About Us Section -->
-  <section class="about_section layout_padding layout_margin">
+  <section class="about_section layout_padding layout_margin margin_top">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -334,6 +334,8 @@
       </div>
     </footer>
     <!-- footer section -->
+    <a href="#" id="scroll" style="display: none;"><span></span></a>
+
   </div>
 
   <!-- jQery -->
@@ -349,7 +351,80 @@
   <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
   <!-- End Google Map -->
+  <script>
+    // ---------sticy-header---------------------
 
+    document.addEventListener("DOMContentLoaded", function () {
+      const header = document.querySelector(".header");
+      const toggler = document.querySelector(".navbar-toggler");
+      const navbarCollapse = document.querySelector("#navbarSupportedContent");
+
+      toggler.addEventListener("click", function () {
+        const isExpanded = navbarCollapse.classList.contains("show");
+        if (isExpanded) {
+          // Navbar is about to close, remove the class
+          header.classList.remove("toggled");
+        } else {
+          // Navbar is about to open, add the class
+          header.classList.add("toggled");
+        }
+      });
+    });
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggler = document.querySelector(".navbar-toggler");
+      const navbarCollapse = document.querySelector("#navbarSupportedContent");
+      const carouselItems = document.querySelectorAll(".carousel-item");
+
+      toggler.addEventListener("click", function () {
+        const isExpanded = navbarCollapse.classList.contains("show");
+        carouselItems.forEach((item) => {
+          if (isExpanded) {
+            // Navbar is about to close, remove the class
+            item.classList.remove("toggled");
+          } else {
+            // Navbar is about to open, add the class
+            item.classList.add("toggled");
+          }
+        });
+      });
+    });
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+      var header = document.querySelector('.header');
+      var lcHeader = function () {
+        if (header) {
+          header.dataset.status = window.scrollY > 60 ? "scrolled" : "";
+        }
+      };
+      window.addEventListener('scroll', lcHeader);
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+      var header = document.querySelector('.header');
+      var lcHeader = function () {
+        if (header) {
+          header.dataset.status = window.scrollY > 60 ? "scrolled" : "";
+        }
+      };
+      window.addEventListener('scroll', lcHeader);
+    });
+
+
+
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+          $('#scroll').fadeIn();
+        } else {
+          $('#scroll').fadeOut();
+        }
+      });
+      $('#scroll').click(function () {
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+      });
+    });
+  </script>
 </body>
 
 </html>
