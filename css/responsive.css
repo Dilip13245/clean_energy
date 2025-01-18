@@ -58,9 +58,9 @@
     margin-top: 45px;
   }
 
-  .contact_section .row {
+  /* .contact_section .row {
     flex-direction: column-reverse;
-  }
+  } */
 
   .contact_section .map_container {
     margin-left: 0;
