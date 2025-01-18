@@ -12,7 +12,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>Digian</title>
+  <title>Clean Energy</title>
 
 
   <!-- bootstrap core css -->
@@ -20,55 +20,114 @@
 
   <!-- font awesome style -->
   <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <!-- ------- -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+    integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- -----slider css------------- -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css ">
+  <!-- --------------------- -->
 
   <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet" />
+  <link href=" css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+  <style>
+    .hero_area {
+      position: relative;
+      min-height: 100vh;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url("images/banner5.jpeg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 0;
+    }
 
+    .flip-box-front::before,
+    .flip-box-back::before {
+      content: "";
+      /* Required for pseudo-elements */
+      position: absolute;
+      /* Position absolute to cover the entire area */
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      /* Semi-transparent black */
+      z-index: 1;
+      /* Place it above the image but below the text */
+    }
+  </style>
 </head>
 
 <body>
 
   <div class="hero_area">
     <!-- header section strats -->
-    <header class="header_section">
+    <header class="header_section header">
       <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg custom_nav-container ">
-          <a class="navbar-brand" href="index.html">
-            <span>
-              Digian
-            </span>
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a href="index.html" class="navbar-brand">
+            <img src="images/Clean-Energy-Logo-transformed.svg" alt="" class="logo_img">
           </a>
-
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class=""> </span>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""></span>
           </button>
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav  ">
+            <ul class="navbar-nav">
               <li class="nav-item active">
                 <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html"> About</a>
+                <a class="nav-link" href="about.html">About</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="service.html">Services</a>
+              </li>
+              <!-- Products Section with Individual Links -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="product.html" id="navbarDropdown" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Products
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="./products/customEqupmentManufecturing.html">Custome Equpment
+                    Manufacturing</a>
+                  <a class="dropdown-item" href="./products/coolentGel.html">Coolant Gel</a>
+                  <a class="dropdown-item" href="./products/waterTank.html">Water Tank</a>
+                  <a class="dropdown-item" href="./products/gasRegulator.html">Gas Regulators</a>
+                  <a class="dropdown-item" href="./products/customAnimationCircute.html">Custom Automation Circuits</a>
+                </div>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="contact.html">Contact Us</a>
               </li>
             </ul>
-            <div class="quote_btn-container">
-              <a href="" class="quote_btn">
-                Get A Quote
-              </a>
-            </div>
           </div>
         </nav>
       </div>
     </header>
+
+    <!-- <div class="header">
+      <h1>logo</h1>
+      <ul class="header-nav">
+        <li><a href="#">menu1</a></li>
+        <li><a href="#">menu2</a></li>
+        <li><a href="#">menu3</a></li>
+      </ul>
+    </div> -->
     <!-- end header section -->
     <!-- slider section -->
     <section class="slider_section ">
@@ -76,24 +135,20 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="container ">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="img-box">
-                    <img src="images/slider-img.png" alt="">
-                  </div>
-                </div>
-                <div class="col-md-6">
+              <div class="row justify-content-center">
+                <div class="col-md-12">
                   <div class="detail-box">
                     <h1>
-                      Digital Marketing Experts
+                      Coolent gel for EDM wire cutting
                     </h1>
                     <p>
-                      Aenean scelerisque felis ut orci condimentum laoreet. Integer nisi nisl, convallis et augue sit amet, lobortis semper quam.
+                      Coolant gel for EDM wire cutting enhances the cutting process by reducing friction, improving
+                      precision, and extending tool life.
                     </p>
                     <div class="btn-box">
-                      <a href="" class="btn1">
+                      <!-- <a href="" class="btn1">
                         Contact Us
-                      </a>
+                      </a> -->
                     </div>
                   </div>
                 </div>
@@ -101,6 +156,96 @@
             </div>
           </div>
           <div class="carousel-item ">
+            <div class="container ">
+              <div class="row justify-content-center">
+                <div class="col-md-12">
+                  <div class="detail-box">
+                    <h1>
+                      Water tank cover
+                    </h1>
+                    <p>
+                      A water tank cover protects the tank from contaminants, debris, and environmental conditions,
+                      ensuring clean and safe water storage.
+                    </p>
+                    <div class="btn-box">
+                      <!-- <a href="" class="btn1">
+                          Contact Us
+                        </a> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="container ">
+              <div class="row justify-content-center">
+                <div class="col-md-12">
+                  <div class="detail-box">
+                    <h1>
+                      Custome Equpment Manufacturing
+                    </h1>
+                    <p>
+                      A Custome Equpment Manufacturing protects the tank from contaminants, debris, and environmental
+                      conditions,
+                      ensuring clean and safe water storage.
+                    </p>
+                    <div class="btn-box">
+                      <!-- <a href="" class="btn1">
+                          Contact Us
+                        </a> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="container ">
+              <div class="row justify-content-center">
+                <div class="col-md-12">
+                  <div class="detail-box">
+                    <h1>
+                      Gas Regulators
+                    </h1>
+                    <p>
+                      A Gas Regulators protects the tank from contaminants, debris, and environmental conditions,
+                      ensuring clean and safe water storage.
+                    </p>
+                    <div class="btn-box">
+                      <!-- <a href="" class="btn1">
+                          Contact Us
+                        </a> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="container ">
+              <div class="row justify-content-center">
+                <div class="col-md-12">
+                  <div class="detail-box">
+                    <h1>
+                      Custom Automation Circuits
+                    </h1>
+                    <p>
+                      A Custom Automation Circuits protects the tank from contaminants, debris, and environmental
+                      conditions,
+                      ensuring clean and safe water storage.
+                    </p>
+                    <div class="btn-box">
+                      <!-- <a href="" class="btn1">
+                          Contact Us
+                        </a> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="carousel-item ">
             <div class="container ">
               <div class="row">
                 <div class="col-md-6">
@@ -114,7 +259,8 @@
                       Digital Marketing Experts
                     </h1>
                     <p>
-                      Aenean scelerisque felis ut orci condimentum laoreet. Integer nisi nisl, convallis et augue sit amet, lobortis semper quam.
+                      Aenean scelerisque felis ut orci condimentum laoreet. Integer nisi nisl, convallis et augue sit
+                      amet, lobortis semper quam.
                     </p>
                     <div class="btn-box">
                       <a href="" class="btn1">
@@ -125,38 +271,14 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="carousel-item ">
-            <div class="container ">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="img-box">
-                    <img src="images/slider-img.png" alt="">
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="detail-box">
-                    <h1>
-                      Digital Marketing Experts
-                    </h1>
-                    <p>
-                      Aenean scelerisque felis ut orci condimentum laoreet. Integer nisi nisl, convallis et augue sit amet, lobortis semper quam.
-                    </p>
-                    <div class="btn-box">
-                      <a href="" class="btn1">
-                        Contact Us
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          </div> -->
         </div>
         <ol class="carousel-indicators">
           <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
           <li data-target="#customCarousel1" data-slide-to="1"></li>
           <li data-target="#customCarousel1" data-slide-to="2"></li>
+          <li data-target="#customCarousel1" data-slide-to="3"></li>
+          <li data-target="#customCarousel1" data-slide-to="4"></li>
         </ol>
       </div>
 
@@ -167,108 +289,155 @@
   <!-- service section -->
   <section class="service_section layout_padding">
     <div class="container">
-      <div class="heading_container">
+      <div class="heading_container mb-4">
         <h2>
-          Our Services
+          Our Products
         </h2>
+        <img class="bottom-shape m-auto" src="./images/bottom-bar.png" alt="Bottom Shape">
         <p>
-          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
       </div>
-      <div class="row">
-        <div class="col-md-6 col-lg-3">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/s1.png" alt="">
+
+      <div class="box-container mt-5">
+        <div class="row justify-content-center">
+          <div class="col-md-6 col-lg-4 mb-4" style="cursor: pointer;"
+            onclick="window.location.href='./products/customEqupmentManufecturing.html'">
+            <div class="box-item">
+              <div class="flip-box">
+                <div class="flip-box-front text-center" style="background-image: url('./images/custom_equ.jpeg');">
+                  <div class="inner color-white">
+                    <h3 class="flip-box-header"> Custome Equpment Manufacturing</h3>
+                  </div>
+                </div>
+                <div class="flip-box-back text-center" style="background-image: url('./images/custom_equ2.jpeg');">
+                  <div class="inner color-white">
+                    <h3 class="flip-box-header"> Custome Equpment Manufacturing</h3>
+                    <button class="flip-box-button">Learn More</button>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="detail-box">
-              <h5>
-                Link Building
-              </h5>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-              </p>
-              <a href="">
-                <span>
-                  Read More
-                </span>
-                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-              </a>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4" style="cursor: pointer;"
+            onclick="window.location.href='./products/coolentGel.html'">
+            <div class="box-item">
+              <div class="flip-box">
+                <div class="flip-box-front text-center" style="background-image: url('./images/coolent_gel.jpeg');">
+                  <div class="inner color-white">
+                    <h3 class="flip-box-header"> Coolant Gel</h3>
+                  </div>
+                </div>
+                <div class="flip-box-back text-center" style="background-image: url('./images/coolent_gel2.jpeg');">
+                  <div class="inner color-white">
+                    <h3 class="flip-box-header"> Coolant Gel</h3>
+                    <button class="flip-box-button">Learn More</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4" style="cursor: pointer;"
+            onclick="window.location.href='./products/waterTank.html'">
+            <div class="box-item">
+              <div class="flip-box">
+                <div class="flip-box-front text-center" style="background-image: url('./images/water_tank.jpeg');">
+                  <div class="inner color-white">
+                    <h3 class="flip-box-header"> Water Tenk</h3>
+                  </div>
+                </div>
+                <div class="flip-box-back text-center" style="background-image: url('./images/water_tank.jpeg');">
+                  <div class="inner color-white">
+                    <h3 class="flip-box-header"> Water Tenk</h3>
+                    <button class="flip-box-button">Learn More</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4" style="cursor: pointer;"
+            onclick="window.location.href='./products/gasRegulator.html'">
+            <div class="box-item">
+              <div class="flip-box">
+                <div class="flip-box-front text-center" style="background-image: url('./images/gas_regu.jpeg');">
+                  <div class="inner color-white">
+                    <h3 class="flip-box-header"> Gas Regulators</h3>
+                  </div>
+                </div>
+                <div class="flip-box-back text-center" style="background-image: url('./images/gas_regu.jpeg');">
+                  <div class="inner color-white">
+                    <h3 class="flip-box-header"> Gas Regulators</h3>
+                    <button class="flip-box-button">Learn More</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4" style="cursor: pointer;"
+            onclick="window.location.href='./products/customAnimationCircute.html'">
+            <div class="box-item">
+              <div class="flip-box">
+                <div class="flip-box-front text-center" style="background-image: url('./images/ciscute.jpeg');">
+                  <div class="inner color-white">
+                    <h3 class="flip-box-header"> Custom Automation Circuits</h3>
+                  </div>
+                </div>
+                <div class="flip-box-back text-center" style="background-image: url('./images/circute2.jpeg');">
+                  <div class="inner color-white">
+                    <h3 class="flip-box-header"> Custom Automation Circuits</h3>
+                    <button class="flip-box-button">Learn More</button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/s2.png" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                On page SEO
-              </h5>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-              </p>
-              <a href="">
-                <span>
-                  Read More
-                </span>
-                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/s3.png" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Online Marketing
-              </h5>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-              </p>
-              <a href="">
-                <span>
-                  Read More
-                </span>
-                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/s4.png" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Email Marketing
-              </h5>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-              </p>
-              <a href="">
-                <span>
-                  Read More
-                </span>
-                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="btn-box">
-        <a href="">
-          View More
-        </a>
       </div>
     </div>
   </section>
+  <section class="service_section layout_padding gray_bg">
+    <div class="container">
+      <div class="heading_container mb-4">
+        <h2>
+          Our Services
+        </h2>
+        <img class="bottom-shape m-auto" src="./images/bottom-bar.png" alt="Bottom Shape">
+        <p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-6 mb-4">
+          <div class="card w-100" onclick="window.location.href='./service.html'" style="cursor: pointer;">
+            <div class="image-wrapper">
+              <img src="./images/repair.jpeg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body text-left">
+              <h5 class="card-title">Repair and Maintenance Service</h5>
+              <p class="card-text">We offer comprehensive installation services tailored specifically for companies
+                across various industries.<span class="more-info">more info</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 mb-4">
+          <div class="card w-100" onclick="window.location.href='./service.html'" style="cursor: pointer;">
+            <div class="image-wrapper">
+              <img src="./images/thirdparty_installatoin.jpeg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body text-left">
+              <h5 class="card-title">Third Parth Installation Services</h5>
+              <p class="card-text">We offer comprehensive installation services tailored specifically for companies
+                across various industries.<span class="more-info">more info</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class=" btn-box">
+          <a href="/service.html">
+            View More
+          </a>
+        </div> -->
+    </div>
+  </section>
+
   <!-- end service section -->
+
 
   <!-- about section -->
 
@@ -276,19 +445,22 @@
     <div class="container  ">
       <div class="row">
         <div class="col-md-6">
-          <div class="detail-box">
-            <div class="heading_container">
+          <div class=" detail-box">
+            <div class="heading_container mb-4">
               <h2>
                 About Us
               </h2>
+              <img class="bottom-shape " src="./images/bottom-bar.png" alt="Bottom Shape">
             </div>
             <p>
-              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
-              in some form, by injected humour, or randomised words which don't look even slightly believable. If you
-              are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in
-              the middle of text. All
+              Welcome to <strong>Clean Energy</strong>, a leading Import & Export Trading Company based in Veraval,
+              Gujarat, India. With
+              a dedication to excellence, we serve as a trusted supplier of high-quality and cost-effective products
+              across diverse industries. Our company is committed to providing reliable solutions for both domestic and
+              international markets, ensuring that our clients have access to top-tier products and services at
+              competitive prices.
             </p>
-            <a href="">
+            <a href="/about.html">
               Read More
             </a>
           </div>
@@ -307,53 +479,25 @@
 
   <!-- case section -->
 
-  <section class="case_section layout_padding">
+  <section class="case_section layout_padding Gallery_sec gray_bg">
     <div class="container">
-      <div class="heading_container">
+      <div class="heading_container mb-4">
         <h2>
-          Our Case Studies
+          Our Products Gallery
         </h2>
+        <img class="bottom-shape m-auto" src="./images/bottom-bar.png" alt="Bottom Shape">
+        <p>
+        </p>
       </div>
       <div class="row">
-        <div class="col-md-6">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/case-1.jpg" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Sit amet consectetur adipisicing elit
-              </h5>
-              <p>
-                Alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
-              </p>
-              <a href="">
-                <span>
-                  Read More
-                </span>
-                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/case-2.jpg" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Excepturi placeat nihil eos maxime
-              </h5>
-              <p>
-                Alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
-              </p>
-              <a href="">
-                <span>
-                  Read More
-                </span>
-                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-              </a>
+        <div class="col-12">
+          <div class="Gallery_container">
+            <div class="carousel">
+              <img class="item" src="./images/coolent_gel.jpeg" alt="" />
+              <img class="item" src="./images/gas_regu.jpeg" alt="" />
+              <img class="item" src="./images/custom_equ.jpeg" alt="" />
+              <img class="item" src="./images/ciscute.jpeg" alt="" />
+              <img class="item" src="./images/water_tank.jpeg" alt="" />
             </div>
           </div>
         </div>
@@ -361,139 +505,59 @@
     </div>
   </section>
 
+  <!-- --------------------------------slider section -------------------------- -->
+  <section class="layout_padding maincard_slider company_logo_slider">
+    <div class="container">
+      <div class="heading_container mb-4 text-center justify-content-center align-items-center">
+        <h2>
+          Our Valuable Clients
+        </h2>
+        <img class="bottom-shape m-auto" src="./images/bottom-bar.png" alt="Bottom Shape">
+        <p>
+        </p>
+      </div>
+      <div class="row pt-md-5 pt-2" data-aos="fade-up" data-aos-duration="1000">
+        <div class="slider">
+          <div class="slide-track">
+            <div class="slide"><img src="./images/client1.jpeg" alt="Slide 1" />
+            </div>
+            <div class="slide"><img src="./images/client2.jpeg" alt="Slide 2" />
+            </div>
+            <div class="slide"><img src="./images/client3.jpeg" alt="Slide 3" />
+            </div>
+            <div class="slide"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" alt="Slide 4" />
+            </div>
+            <div class="slide"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" alt="Slide 5" />
+            </div>
+            <div class="slide"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" alt="Slide 6" />
+            </div>
+            <div class="slide"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" alt="Slide 7" />
+            </div>
+
+            <!-- Duplicate slides for smooth scrolling -->
+            <div class="slide"><img src="./images/client1.jpeg" alt="Slide 1" />
+            </div>
+            <div class="slide"><img src="./images/client2.jpeg" alt="Slide 2" />
+            </div>
+            <div class="slide"><img src="./images/client3.jpeg" alt="Slide 3" />
+            </div>
+            <div class="slide"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" alt="Slide 4" />
+            </div>
+            <div class="slide"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" alt="Slide 5" />
+            </div>
+            <div class="slide"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" alt="Slide 6" />
+            </div>
+            <div class="slide"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" alt="Slide 7" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- end case section -->
 
-  <!-- client section -->
-  <section class="client_section ">
-    <div class="container">
-      <div class="heading_container heading_center">
-        <h2>
-          Testimonial
-        </h2>
-      </div>
-    </div>
-    <div id="customCarousel2" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-10 mx-auto">
-                <div class="box">
-                  <div class="img-box">
-                    <img src="images/client.jpg" alt="">
-                  </div>
-                  <div class="detail-box">
-                    <div class="client_info">
-                      <div class="client_name">
-                        <h5>
-                          Morojink
-                        </h5>
-                        <h6>
-                          Customer
-                        </h6>
-                      </div>
-                      <i class="fa fa-quote-left" aria-hidden="true"></i>
-                    </div>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                      labore
-                      et
-                      dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                      aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                      cillum
-                      dolore eu fugia
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-10 mx-auto">
-                <div class="box">
-                  <div class="img-box">
-                    <img src="images/client.jpg" alt="">
-                  </div>
-                  <div class="detail-box">
-                    <div class="client_info">
-                      <div class="client_name">
-                        <h5>
-                          Morojink
-                        </h5>
-                        <h6>
-                          Customer
-                        </h6>
-                      </div>
-                      <i class="fa fa-quote-left" aria-hidden="true"></i>
-                    </div>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                      labore
-                      et
-                      dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                      aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                      cillum
-                      dolore eu fugia
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-10 mx-auto">
-                <div class="box">
-                  <div class="img-box">
-                    <img src="images/client.jpg" alt="">
-                  </div>
-                  <div class="detail-box">
-                    <div class="client_info">
-                      <div class="client_name">
-                        <h5>
-                          Morojink
-                        </h5>
-                        <h6>
-                          Customer
-                        </h6>
-                      </div>
-                      <i class="fa fa-quote-left" aria-hidden="true"></i>
-                    </div>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                      labore
-                      et
-                      dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                      aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                      cillum
-                      dolore eu fugia
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <ol class="carousel-indicators">
-        <li data-target="#customCarousel2" data-slide-to="0" class="active"></li>
-        <li data-target="#customCarousel2" data-slide-to="1"></li>
-        <li data-target="#customCarousel2" data-slide-to="2"></li>
-      </ol>
-    </div>
-  </section>
-  <!-- end client section -->
-
-
-
   <!-- contact section -->
-
-  <section class="contact_section layout_padding">
+  <!-- <section class="contact_section layout_padding">
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-5 col-lg-4 offset-md-1">
@@ -533,7 +597,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- end contact section -->
 
@@ -546,14 +610,15 @@
           <div class="col-md-6 col-lg-3 ">
             <div class="info_detail">
               <h4>
-                Digian
+                Clean Energy
               </h4>
               <p>
-                Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful
+                Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin
+                words, combined with a handful
               </p>
             </div>
           </div>
-          <div class="col-md-6 col-lg-2 mx-auto">
+          <div class="col-md-6 col-lg-3 mx-auto">
             <div class="info_link_box">
               <h4>
                 Links
@@ -568,13 +633,16 @@
                 <a class="" href="service.html">
                   Services
                 </a>
+                <a class="" href="product.html">
+                  Products
+                </a>
                 <a class="" href="contact.html">
                   Contact Us
                 </a>
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3 ">
+          <!-- <div class="col-md-6 col-lg-3 ">
             <h4>
               Subscribe
             </h4>
@@ -584,7 +652,7 @@
                 Subscribe
               </button>
             </form>
-          </div>
+          </div> -->
           <div class="col-md-6 col-lg-3 mb-0 ml-auto">
             <div class="info_contact">
               <h4>
@@ -637,24 +705,114 @@
       <div class="container">
         <p>
           &copy; <span id="displayYear"></span> All Rights Reserved By
-          <a href="https://html.design/">Free Html Templates</a>
+          <a href="">Clean Energy</a>
         </p>
       </div>
     </footer>
     <!-- footer section -->
+    <a href="#" id="scroll" style="display: none;"><span></span></a>
   </div>
 
   <!-- jQery -->
   <script src="js/jquery-3.4.1.min.js"></script>
   <!-- popper js -->
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
   <!-- bootstrap js -->
   <script src="js/bootstrap.js"></script>
   <script src="js/custom.js"></script>
-  <!-- Google Map -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
-  <!-- End Google Map -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+    integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- ---------slick slider css------------------ -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+    integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- ===================custom js ============================ -->
+
+  <script>
+
+    // -----------------------slider-------------------
+    $(".my-slider").slick({
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 10,
+      arrows: false,
+      dots: false,
+      autoplaySpeed: 2000,
+      infinite: true,
+      autoplay: true,
+      responsive: [
+        {
+          breakpoint: 1025,
+          settings: {
+            slidesToShow: 3,
+          },
+        },
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 2,
+          },
+        },
+        {
+          breakpoint: 769,
+          settings: {
+            slidesToShow: 2,
+          },
+        },
+        {
+          breakpoint: 577,
+          settings: {
+            slidesToShow: 1,
+
+          },
+        },
+      ],
+    });
+
+    // ---------sticy-header---------------------
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const header = document.querySelector(".header");
+      let lastScrollTop = 0; // Variable to store the last scroll position
+
+      window.addEventListener('scroll', function () {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop; // Get current scroll position
+
+        if (scrollTop > lastScrollTop) {
+          // Scrolling down
+          header.dataset.status = "hidden"; // Set data-status to "hidden"
+        } else {
+          // Scrolling up
+          header.dataset.status = "scrolled"; // Set data-status to "scrolled"
+        }
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Update last scroll position
+      });
+    });
+
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+          $('#scroll').fadeIn();
+        } else {
+          $('#scroll').fadeOut();
+        }
+      });
+      $('#scroll').click(function () {
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+      });
+    });
+  </script>
+
+
 
 </body>
 
