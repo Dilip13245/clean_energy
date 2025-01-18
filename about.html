@@ -353,63 +353,23 @@
   <!-- End Google Map -->
   <script>
     // ---------sticy-header---------------------
-
     document.addEventListener("DOMContentLoaded", function () {
       const header = document.querySelector(".header");
-      const toggler = document.querySelector(".navbar-toggler");
-      const navbarCollapse = document.querySelector("#navbarSupportedContent");
+      let lastScrollTop = 0; // Variable to store the last scroll position
 
-      toggler.addEventListener("click", function () {
-        const isExpanded = navbarCollapse.classList.contains("show");
-        if (isExpanded) {
-          // Navbar is about to close, remove the class
-          header.classList.remove("toggled");
+      window.addEventListener('scroll', function () {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop; // Get current scroll position
+
+        if (scrollTop > lastScrollTop) {
+          // Scrolling down
+          header.dataset.status = "hidden"; // Set data-status to "hidden"
         } else {
-          // Navbar is about to open, add the class
-          header.classList.add("toggled");
+          // Scrolling up
+          header.dataset.status = "scrolled"; // Set data-status to "scrolled"
         }
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Update last scroll position
       });
     });
-    document.addEventListener("DOMContentLoaded", function () {
-      const toggler = document.querySelector(".navbar-toggler");
-      const navbarCollapse = document.querySelector("#navbarSupportedContent");
-      const carouselItems = document.querySelectorAll(".carousel-item");
-
-      toggler.addEventListener("click", function () {
-        const isExpanded = navbarCollapse.classList.contains("show");
-        carouselItems.forEach((item) => {
-          if (isExpanded) {
-            // Navbar is about to close, remove the class
-            item.classList.remove("toggled");
-          } else {
-            // Navbar is about to open, add the class
-            item.classList.add("toggled");
-          }
-        });
-      });
-    });
-
-
-    document.addEventListener('DOMContentLoaded', function () {
-      var header = document.querySelector('.header');
-      var lcHeader = function () {
-        if (header) {
-          header.dataset.status = window.scrollY > 60 ? "scrolled" : "";
-        }
-      };
-      window.addEventListener('scroll', lcHeader);
-    });
-    document.addEventListener('DOMContentLoaded', function () {
-      var header = document.querySelector('.header');
-      var lcHeader = function () {
-        if (header) {
-          header.dataset.status = window.scrollY > 60 ? "scrolled" : "";
-        }
-      };
-      window.addEventListener('scroll', lcHeader);
-    });
-
-
 
     $(document).ready(function () {
       $(window).scroll(function () {

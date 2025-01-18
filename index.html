@@ -45,11 +45,27 @@
       -ms-flex-direction: column;
       flex-direction: column;
       background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-        url("images/banner.jpg");
+        url("images/banner5.jpeg");
       background-position: center center;
       background-repeat: no-repeat;
       background-size: cover;
       border-radius: 0;
+    }
+
+    .flip-box-front::before,
+    .flip-box-back::before {
+      content: "";
+      /* Required for pseudo-elements */
+      position: absolute;
+      /* Position absolute to cover the entire area */
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      /* Semi-transparent black */
+      z-index: 1;
+      /* Place it above the image but below the text */
     }
   </style>
 </head>
@@ -273,15 +289,12 @@
             onclick="window.location.href='./product.html#customEqupmentManufecturing'">
             <div class="box-item">
               <div class="flip-box">
-                <div class="flip-box-front text-center"
-                  style="background-image: url('https://s25.postimg.cc/frbd9towf/cta-2.png');">
+                <div class="flip-box-front text-center" style="background-image: url('./images/custom_equ.jpeg');">
                   <div class="inner color-white">
                     <h3 class="flip-box-header"> Custome Equpment Manufacturing</h3>
-                    <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img">
                   </div>
                 </div>
-                <div class="flip-box-back text-center"
-                  style="background-image: url('https://s25.postimg.cc/frbd9towf/cta-2.png');">
+                <div class="flip-box-back text-center" style="background-image: url('./images/custom_equ2.jpeg');">
                   <div class="inner color-white">
                     <h3 class="flip-box-header"> Custome Equpment Manufacturing</h3>
                     <button class="flip-box-button">Learn More</button>
@@ -294,15 +307,12 @@
             onclick="window.location.href='./product.html#coolentGel'">
             <div class="box-item">
               <div class="flip-box">
-                <div class="flip-box-front text-center"
-                  style="background-image: url('https://s25.postimg.cc/hj4c4qnov/cta-3.png');">
+                <div class="flip-box-front text-center" style="background-image: url('./images/coolent_gel.jpeg');">
                   <div class="inner color-white">
                     <h3 class="flip-box-header"> Coolant Gel</h3>
-                    <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img">
                   </div>
                 </div>
-                <div class="flip-box-back text-center"
-                  style="background-image: url('https://s25.postimg.cc/hj4c4qnov/cta-3.png');">
+                <div class="flip-box-back text-center" style="background-image: url('./images/coolent_gel2.jpeg');">
                   <div class="inner color-white">
                     <h3 class="flip-box-header"> Coolant Gel</h3>
                     <button class="flip-box-button">Learn More</button>
@@ -311,18 +321,16 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4 mb-4">
+          <div class="col-md-6 col-lg-4 mb-4" style="cursor: pointer;"
+            onclick="window.location.href='./product.html#waterTank'">
             <div class="box-item">
               <div class="flip-box">
-                <div class="flip-box-front text-center"
-                  style="background-image: url('https://s25.postimg.cc/l2q9ujy4f/cta-4.png');">
+                <div class="flip-box-front text-center" style="background-image: url('./images/water_tank.jpeg');">
                   <div class="inner color-white">
                     <h3 class="flip-box-header"> Water Tenk</h3>
-                    <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img">
                   </div>
                 </div>
-                <div class="flip-box-back text-center"
-                  style="background-image: url('https://s25.postimg.cc/l2q9ujy4f/cta-4.png');">
+                <div class="flip-box-back text-center" style="background-image: url('./images/water_tank.jpeg');">
                   <div class="inner color-white">
                     <h3 class="flip-box-header"> Water Tenk</h3>
                     <button class="flip-box-button">Learn More</button>
@@ -331,18 +339,16 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4 mb-4">
+          <div class="col-md-6 col-lg-4 mb-4" style="cursor: pointer;"
+            onclick="window.location.href='./product.html#gasRagulator'">
             <div class="box-item">
               <div class="flip-box">
-                <div class="flip-box-front text-center"
-                  style="background-image: url('https://s25.postimg.cc/frbd9towf/cta-2.png');">
+                <div class="flip-box-front text-center" style="background-image: url('./images/gas_regu.jpeg');">
                   <div class="inner color-white">
                     <h3 class="flip-box-header"> Gas Regulators</h3>
-                    <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img">
                   </div>
                 </div>
-                <div class="flip-box-back text-center"
-                  style="background-image: url('https://s25.postimg.cc/frbd9towf/cta-2.png');">
+                <div class="flip-box-back text-center" style="background-image: url('./images/gas_regu.jpeg');">
                   <div class="inner color-white">
                     <h3 class="flip-box-header"> Gas Regulators</h3>
                     <button class="flip-box-button">Learn More</button>
@@ -351,18 +357,16 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4 mb-4">
+          <div class="col-md-6 col-lg-4 mb-4" style="cursor: pointer;"
+            onclick="window.location.href='./product.html#customAnimationCircute'">
             <div class="box-item">
               <div class="flip-box">
-                <div class="flip-box-front text-center"
-                  style="background-image: url('https://s25.postimg.cc/hj4c4qnov/cta-3.png');">
+                <div class="flip-box-front text-center" style="background-image: url('./images/ciscute.jpeg');">
                   <div class="inner color-white">
                     <h3 class="flip-box-header"> Custom Automation Circuits</h3>
-                    <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img">
                   </div>
                 </div>
-                <div class="flip-box-back text-center"
-                  style="background-image: url('https://s25.postimg.cc/hj4c4qnov/cta-3.png');">
+                <div class="flip-box-back text-center" style="background-image: url('./images/circute2.jpeg');">
                   <div class="inner color-white">
                     <h3 class="flip-box-header"> Custom Automation Circuits</h3>
                     <button class="flip-box-button">Learn More</button>
@@ -388,24 +392,24 @@
         <div class="col-lg-6 col-md-6 mb-4">
           <div class="card w-100" onclick="window.location.href='./service.html'" style="cursor: pointer;">
             <div class="image-wrapper">
-              <img src="./images/about-img.jpg" class="card-img-top" alt="...">
+              <img src="./images/repair.jpeg" class="card-img-top" alt="...">
             </div>
             <div class="card-body text-left">
-              <h5 class="card-title">Repair and maintenance service</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
-                ullamcorper mattis, pulvinar dapibus leo.</p>
+              <h5 class="card-title">Repair and Maintenance Service</h5>
+              <p class="card-text">We offer comprehensive installation services tailored specifically for companies
+                across various industries.<span class="more-info">more info</span></p>
             </div>
           </div>
         </div>
         <div class="col-lg-6 col-md-6 mb-4">
           <div class="card w-100" onclick="window.location.href='./service.html'" style="cursor: pointer;">
             <div class="image-wrapper">
-              <img src="./images/case-1.jpg" class="card-img-top" alt="...">
+              <img src="./images/thirdparty_installatoin.jpeg" class="card-img-top" alt="...">
             </div>
             <div class="card-body text-left">
-              <h5 class="card-title">Third parth installation services</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
-                ullamcorper mattis, pulvinar dapibus leo.</p>
+              <h5 class="card-title">Third Parth Installation Services</h5>
+              <p class="card-text">We offer comprehensive installation services tailored specifically for companies
+                across various industries.<span class="more-info">more info</span></p>
             </div>
           </div>
         </div>
@@ -475,21 +479,11 @@
         <div class="col-12">
           <div class="Gallery_container">
             <div class="carousel">
-              <img class="item"
-                src="https://images.pexels.com/photos/1173777/pexels-photo-1173777.jpeg?auto=compress&cs=tinysrgb&w=600"
-                alt="" />
-              <img class="item"
-                src="https://images.pexels.com/photos/775201/pexels-photo-775201.jpeg?auto=compress&cs=tinysrgb&w=600"
-                alt="" />
-              <img class="item"
-                src="https://images.pexels.com/photos/1598073/pexels-photo-1598073.jpeg?auto=compress&cs=tinysrgb&w=600"
-                alt="" />
-              <img class="item"
-                src="https://images.pexels.com/photos/70365/forest-sunbeams-trees-sunlight-70365.jpeg?auto=compress&cs=tinysrgb&w=600"
-                alt="" />
-              <img class="item"
-                src="https://images.pexels.com/photos/1658967/pexels-photo-1658967.jpeg?auto=compress&cs=tinysrgb&w=600"
-                alt="" />
+              <img class="item" src="./images/coolent_gel.jpeg" alt="" />
+              <img class="item" src="./images/gas_regu.jpeg" alt="" />
+              <img class="item" src="./images/custom_equ.jpeg" alt="" />
+              <img class="item" src="./images/ciscute.jpeg" alt="" />
+              <img class="item" src="./images/water_tank.jpeg" alt="" />
             </div>
           </div>
         </div>
@@ -511,11 +505,11 @@
       <div class="row pt-md-5 pt-2" data-aos="fade-up" data-aos-duration="1000">
         <div class="slider">
           <div class="slide-track">
-            <div class="slide"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" alt="Slide 1" />
+            <div class="slide"><img src="./images/client1.jpeg" alt="Slide 1" />
             </div>
-            <div class="slide"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" alt="Slide 2" />
+            <div class="slide"><img src="./images/client2.jpeg" alt="Slide 2" />
             </div>
-            <div class="slide"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" alt="Slide 3" />
+            <div class="slide"><img src="./images/client3.jpeg" alt="Slide 3" />
             </div>
             <div class="slide"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" alt="Slide 4" />
             </div>
@@ -527,11 +521,11 @@
             </div>
 
             <!-- Duplicate slides for smooth scrolling -->
-            <div class="slide"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" alt="Slide 1" />
+            <div class="slide"><img src="./images/client1.jpeg" alt="Slide 1" />
             </div>
-            <div class="slide"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" alt="Slide 2" />
+            <div class="slide"><img src="./images/client2.jpeg" alt="Slide 2" />
             </div>
-            <div class="slide"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" alt="Slide 3" />
+            <div class="slide"><img src="./images/client3.jpeg" alt="Slide 3" />
             </div>
             <div class="slide"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" alt="Slide 4" />
             </div>
@@ -776,51 +770,21 @@
 
     document.addEventListener("DOMContentLoaded", function () {
       const header = document.querySelector(".header");
-      const toggler = document.querySelector(".navbar-toggler");
-      const navbarCollapse = document.querySelector("#navbarSupportedContent");
+      let lastScrollTop = 0; // Variable to store the last scroll position
 
-      toggler.addEventListener("click", function () {
-        const isExpanded = navbarCollapse.classList.contains("show");
-        if (isExpanded) {
-          // Navbar is about to close, remove the class
-          header.classList.remove("toggled");
+      window.addEventListener('scroll', function () {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop; // Get current scroll position
+
+        if (scrollTop > lastScrollTop) {
+          // Scrolling down
+          header.dataset.status = "hidden"; // Set data-status to "hidden"
         } else {
-          // Navbar is about to open, add the class
-          header.classList.add("toggled");
+          // Scrolling up
+          header.dataset.status = "scrolled"; // Set data-status to "scrolled"
         }
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Update last scroll position
       });
     });
-    document.addEventListener("DOMContentLoaded", function () {
-      const toggler = document.querySelector(".navbar-toggler");
-      const navbarCollapse = document.querySelector("#navbarSupportedContent");
-      const carouselItems = document.querySelectorAll(".carousel-item");
-
-      toggler.addEventListener("click", function () {
-        const isExpanded = navbarCollapse.classList.contains("show");
-        carouselItems.forEach((item) => {
-          if (isExpanded) {
-            // Navbar is about to close, remove the class
-            item.classList.remove("toggled");
-          } else {
-            // Navbar is about to open, add the class
-            item.classList.add("toggled");
-          }
-        });
-      });
-    });
-
-
-    document.addEventListener('DOMContentLoaded', function () {
-      var header = document.querySelector('.header');
-      var lcHeader = function () {
-        if (header) {
-          header.dataset.status = window.scrollY > 60 ? "scrolled" : "";
-        }
-      };
-      window.addEventListener('scroll', lcHeader);
-    });
-
-
 
     $(document).ready(function () {
       $(window).scroll(function () {

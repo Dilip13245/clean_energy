@@ -128,8 +128,8 @@
   }
   .header {
     width: 100%;
-    border-radius: 0;
-    top: 35px;
+    border-radius: 50px;
+    /* top: 35px; */
   }
 }
 
