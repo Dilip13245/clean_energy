@@ -139,13 +139,17 @@ a:focus {
 }
 
 .custom_nav-container .navbar-nav .nav-item:hover .nav-link,
-.custom_nav-container .navbar-nav .nav-item.active .nav-link,
-.custom_nav-container .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover,
-.custom_nav-container .navbar-nav .nav-item .dropdown-menu .dropdown-item.active {
+.custom_nav-container .navbar-nav .nav-item.active .nav-link
+{
   color: #ffffff;
   background-color: #30ca96;
 }
-
+.custom_nav-container .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover,
+.custom_nav-container .navbar-nav .nav-item .dropdown-menu .dropdown-item.active 
+{
+  color: #30ca96;
+  background-color: #ffffff;
+}
 
 .custom_nav-container .navbar-toggler {
   outline: none;
@@ -727,8 +731,7 @@ a:focus {
 .footer_container {
   background-color: #30ca96;
   color: #ffffff;
-  border-radius: 350px 0 0 0;
-  padding-top: 145px;
+  /* padding-top: 145px; */
 }
 
 /* info section */
@@ -1009,7 +1012,11 @@ a:focus {
   cursor: pointer;
   transition: all 0.5s;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 10px; /* Slightly lighter shadow */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 .contact-page-item-inner:hover {
   transform: scale(0.95); /* Subtle scaling on hover */
   border: 2px solid #30ca96;
@@ -1240,8 +1247,8 @@ a:focus {
 .footer_container {
   background-color: #616060;
   color: #ffffff;
-  border-radius: 250px 0 0 0;
-  padding-top: 145px;
+  /* border-radius: 250px 0 0 0; */
+  padding-top: 45px;
 }
 
 .gray_bg {
@@ -1639,3 +1646,7 @@ color: #ffffff;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
 }
 
+.footer_section {
+  border-top: 1px solid #8080805c;
+  margin-top: 15px;
+}
