@@ -80,7 +80,7 @@ a:focus {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-.hero_area {
+/* .hero_area {
   position: relative;
   min-height: 100vh;
   display: flex;
@@ -89,7 +89,7 @@ a:focus {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 0;
-}
+} */
 /*header section*/
 /* .hero_area {
   position: relative;
@@ -105,10 +105,10 @@ a:focus {
   border-radius: 0 0 350px 0;
 } */
 
-.sub_page .hero_area {
+/* .sub_page .hero_area {
   min-height: auto;
   background: url("../images/banner.jpg");
-}
+} */
 
 .header_section {
   padding: 15px 0;
@@ -143,7 +143,7 @@ a:focus {
 .custom_nav-container .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover,
 .custom_nav-container .navbar-nav .nav-item .dropdown-menu .dropdown-item.active {
   color: #ffffff;
-  background-color: #000000;
+  background-color: #30ca96;
 }
 
 
@@ -297,12 +297,12 @@ a:focus {
   position: unset;
 }
 
-.slider_section .detail-box {
+.slider_content .detail-box {
   text-align: center;
   color: #ffffff;
 }
 
-.slider_section .detail-box h1 {
+.slider_content .detail-box h1 {
   font-weight: bold;
   margin-bottom: 20px;
   font-size: 50px;
@@ -346,7 +346,7 @@ a:focus {
   width: 100%;
 }
 
-.slider_section .carousel-indicators {
+.slider_content .carousel-indicators {
   position: absolute;
   bottom: 20px;
   margin: 0;
@@ -359,7 +359,7 @@ a:focus {
   margin-top: 100px;
 }
 
-.slider_section .carousel-indicators li {
+.slider_content .carousel-indicators li {
   background-color: #ffffff;
   width: 15px;
   height: 15px;
@@ -367,7 +367,7 @@ a:focus {
   opacity: 1;
 }
 
-.slider_section .carousel-indicators li.active {
+.slider_content .carousel-indicators li.active {
   width: 23px;
   height: 23px;
   background-color: #616060;
@@ -750,6 +750,7 @@ a:focus {
 .info_section .info_contact .contact_link_box a {
   margin: 5px 0;
   color: #ffffff;
+  /* width: 350px; */
 }
 
 .info_section .info_contact .contact_link_box a i {
@@ -1000,10 +1001,10 @@ a:focus {
   transform: translateZ(50px) rotateY(-15deg);
 }
 .contact-page-item-inner {
-  padding: 20px 15px; /* Reduced padding */
+  padding: 5px 15px; /* Reduced padding */
   border: 2px solid #eff2f8;
   transition: 500ms all ease;
-  height: 250px; /* Reduced height */
+  height: 360px; /* Reduced height */
   border-radius: 6px;
   cursor: pointer;
   transition: all 0.5s;
@@ -1014,10 +1015,17 @@ a:focus {
   border: 2px solid #30ca96;
 }
 .contact-page-item-inner .item-icon {
-  width: 60px; /* Reduced width */
-  height: 60px; /* Reduced height */
-  font-size: 30px; /* Smaller icon size */
-  margin-bottom: 15px; /* Reduced spacing */
+  width: 60px;
+  height: 60px;
+  font-size: 30px;
+  margin-bottom: 15px;
+  margin: auto;
+  background: #8080803d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-bottom: 20px;
 }
 .contact-page-item-inner .item-text h3 {
   font-size: 18px; /* Reduced heading size */
@@ -1230,8 +1238,10 @@ a:focus {
   transform: scale(0.9);
 }
 .footer_container {
-  background-color: #000000;
-  border-radius: 0;
+  background-color: #616060;
+  color: #ffffff;
+  border-radius: 250px 0 0 0;
+  padding-top: 145px;
 }
 
 .gray_bg {
@@ -1364,7 +1374,7 @@ strong {
   background-size: cover;
   background-position: center;
   border-radius: 8px;
-  min-height: 475px;
+  min-height: 380px;
   -ms-transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
   transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
   -webkit-transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
@@ -1573,3 +1583,59 @@ color: #ffffff;
   filter: "alpha(opacity=100)";
   -ms-filter: "alpha(opacity=100)";
 }
+.fullscreen-overlay {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+}
+
+.fullscreen-overlay img {
+  max-width: 90%;
+  max-height: 90%;
+  margin: auto;
+  display: block;
+}
+
+.fullscreen-overlay #closeOverlay {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.slider_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.carousel-item {
+  height: 100vh;
+  min-height: 100vh;
+}
+.carousel-indicators {
+  bottom: 30px;
+}
+.carousel-caption {
+  bottom: auto;
+  top: 43%;
+}
+.carousel-item::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+}
+

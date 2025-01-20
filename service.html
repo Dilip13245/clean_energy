@@ -71,6 +71,15 @@
       text-align: left;
       list-style: disc;
     }
+
+    .read-more {
+      color: rgb(97, 97, 100);
+      /* Change color to indicate it's clickable */
+      text-decoration: underline;
+      /* Underline to indicate it's a link */
+      margin-top: 10px;
+      /* Add some space above the text */
+    }
   </style>
 </head>
 
@@ -124,7 +133,7 @@
     <!-- end header section -->
   </div>
   <!-- service section -->
-  <section class="service_section layout_padding  margin_top">
+  <section class="service_section layout_padding margin_top">
     <div class="container">
       <div class="heading_container mb-4 text-center">
         <h2>Our Services</h2>
@@ -135,70 +144,173 @@
         </p>
       </div>
 
-      <div class="service-item mb-5">
-        <div class="design card p-3 ">
+      <div class="service-item mb-5" data-toggle="modal" data-target="#repairModal">
+        <div class="design card p-3">
           <div class="row align-items-center">
             <div class="col-lg-4 mb-3 mb-lg-0">
               <img src="./images/about-img.jpg" alt="Custom Equipment Manufacturing" class="service-img">
             </div>
             <div class="detailed-text col-lg-8">
-              <h3 class="service-title">Repair and maintenance service</h3>
+              <h3 class="service-title">Repair and Maintenance Service</h3>
               <ul>
-
-                <li>
-                  We specialize in creating custom equipment tailored to your specific business requirements. Our
-                  advanced
-                  designs focus on maximizing efficiency, durability, and performance.
-                </li>
-                <li>
-                  From concept development to production, our process ensures precision engineering, rigorous quality
-                  control, and innovative technology integration. Trust us to deliver equipment that drives productivity
-                  and
-                  adds value to your operations.
-                </li>
-                <li>
-                  From concept development to production, our process ensures precision engineering, rigorous quality
-                  control, and innovative technology integration. Trust us to deliver equipment that drives productivity
-                  and
-                  adds value to your operations.
-                </li>
+                <li>We specialize in creating custom equipment tailored to your specific business requirements.</li>
+                <li>From concept development to production, our process ensures precision engineering.</li>
+                <li>Trust us to deliver equipment that drives productivity and adds value to your operations.</li>
               </ul>
+              <span class="read-more">Read More</span> <!-- Simple text for "Read More" -->
             </div>
           </div>
         </div>
       </div>
-      <div class="service-item mb-5">
-        <div class="design card  p-3">
+
+      <div class="service-item mb-5" data-toggle="modal" data-target="#installationModal">
+        <div class="design card p-3">
           <div class="row align-items-center">
             <div class="col-lg-4 mb-3 mb-lg-0">
               <img src="./images/case-1.jpg" alt="Consultation Services" class="service-img">
             </div>
             <div class="detailed-text col-lg-8">
-              <h3 class="service-title">Third parth installation services</h3>
+              <h3 class="service-title">Third Party Installation Services</h3>
               <ul>
-
-                <li>
-                  We offer comprehensive installation services tailored specifically for companies across various
-                  industries. Our team specializes in providing professional and efficient installation solutions,
-                  ensuring that your equipment, systems, and infrastructure are set up seamlessly.
-                <li>
-                  Whether it's installing machinery, software, or other essential systems, we are dedicated to meeting
-                  the unique needs of each client.
-                </li>
-                <li>
-                  We work closely with businesses to understand their requirements and provide customized installation
-                  services that support smooth operations and enhance productivity. With years of experience and
-                  expertise, we ensure that all installations are completed on time, with attention to detail and
-                  high-quality standards.
-                </li>
+                <li>We offer comprehensive installation services tailored specifically for companies.</li>
+                <li>Whether it's installing machinery, software, or other essential systems.</li>
+                <li>We work closely with businesses to understand their requirements.</li>
               </ul>
+              <span class="read-more">Read More</span> <!-- Simple text for "Read More" -->
             </div>
           </div>
         </div>
       </div>
     </div>
-
   </section>
+
+  <!-- Repair Modal -->
+  <div class="modal fade" id="repairModal" tabindex="-1" role="dialog" aria-labelledby="repairModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document"> <!-- Added modal-lg class here -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="repairModalLabel"><strong>Repair and Maintenance Service Details</strong></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>We offer a broad range of repair and maintenance services designed to keep your equipment, machinery, or
+            property running smoothly. Whether you're dealing with a minor issue or a major breakdown, our experienced
+            technicians are here to help.</p>
+
+          <h6>1. Equipment Repair & Maintenance</h6>
+          <p><strong>Repair Services:</strong> Our skilled technicians are trained to repair all types of equipment,
+            from household appliances to heavy industrial machinery.</p>
+          <ul>
+            <li>Fault diagnosis</li>
+            <li>Component replacement</li>
+            <li>System calibration</li>
+            <li>Software troubleshooting (if applicable)</li>
+          </ul>
+
+          <p><strong>Maintenance Services:</strong> Regular maintenance is essential for preventing breakdowns and
+            extending the lifespan of your equipment.</p>
+          <ul>
+            <li>Preventive maintenance schedules</li>
+            <li>Routine inspections</li>
+            <li>Cleaning and lubrication</li>
+            <li>Parts replacement</li>
+          </ul>
+
+          <h6>2. Laser Source Repairing</h6>
+          <p><strong>Laser Systems Repair:</strong> Specialized repair services for laser sources used in various
+            industries, including medical devices, manufacturing, and research labs.</p>
+          <ul>
+            <li>Laser module diagnostics and repairs</li>
+            <li>Power supply testing and component replacement</li>
+            <li>Optics and alignment adjustments</li>
+            <li>Preventive maintenance for longevity</li>
+          </ul>
+
+          <h6>3. Electronic Circuit Repairing</h6>
+          <p><strong>Circuit Board Diagnostics and Repair:</strong> We specialize in repairing and restoring electronic
+            circuit boards for consumer electronics, industrial machinery, and more.</p>
+          <ul>
+            <li>Component testing and replacement (capacitors, resistors, ICs, etc.)</li>
+            <li>Soldering and reflow services</li>
+            <li>Short-circuit and trace repairs</li>
+            <li>Customized circuit modifications and upgrades</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Installation Modal -->
+  <div class="modal fade" id="installationModal" tabindex="-1" role="dialog" aria-labelledby="installationModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document"> <!-- Added modal-xl class for extra large -->
+      <div class="modal-content">
+        <div class="modal-header" style="display: flex; justify-content: center; width: 100%;">
+          <h5 class="modal-title" id="installationModalLabel"><strong>Third-Party Installation Services Details</strong>
+          </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>We offer comprehensive installation solutions for various equipment and systems, from renewable energy
+            solutions to industrial machinery and essential home utilities. Below are some of the key services we
+            provide:</p>
+
+          <h6>Solar Installation Services</h6>
+          <p><strong>Residential and Commercial Solar Systems:</strong> We provide professional installation of solar
+            panels for both residential and commercial properties. Our team ensures the efficient setup and integration
+            of solar power systems, helping you reduce energy bills and promote sustainability.</p>
+          <ul>
+            <li>Site Assessment: Thorough inspection to determine the best installation location.</li>
+            <li>Panel Mounting: Secure mounting of solar panels with the correct angle and orientation.</li>
+            <li>Electrical Connection: Proper wiring, inverter setup, and grid connection.</li>
+            <li>System Testing: Post-installation testing to ensure peak performance.</li>
+            <li>Solar Battery Storage Systems: Along with solar panels, we can install energy storage solutions,
+              allowing you to store excess energy for use during non-sunny periods, increasing your system's efficiency.
+            </li>
+          </ul>
+
+          <h6>Machinery Installation</h6>
+          <p><strong>Industrial Machinery:</strong> From manufacturing machines to factory equipment, we handle the
+            complete installation of heavy machinery. Our technicians ensure that all components are properly aligned
+            and functional.</p>
+          <ul>
+            <li>Machine Setup: Accurate positioning, leveling, and securing of machines.</li>
+            <li>Power and Control Connections: Electrical and mechanical connections to ensure safe operation.</li>
+            <li>Testing and Calibration: Thorough testing and calibration of machinery for optimal performance.</li>
+            <li>Office and Commercial Equipment: For offices and commercial spaces, we install various types of
+              equipment such as printers, copiers, air conditioning units, and more.</li>
+            <li>Placement and Configuration: Strategically placing equipment for optimal functionality and user
+              accessibility.</li>
+            <li>Wiring and Connectivity: Ensuring proper electrical and data connections.</li>
+          </ul>
+
+          <h6>Gas Regulator Installation for Boilers</h6>
+          <p><strong>Boiler Gas Regulator Installation:</strong> Proper installation of gas regulators for boilers is
+            critical for safe and efficient operation. Our technicians ensure that your system is up to code and works
+            efficiently.</p>
+          <ul>
+            <li>Pressure Regulation Setup: Correct installation of regulators to manage the flow and pressure of gas to
+              the boiler.</li>
+            <li>Leak Testing: Comprehensive testing for gas leaks to ensure safety.</li>
+            <li>System Integration: Properly integrating the regulator into your existing boiler system.</li>
+            <li>Routine Maintenance & Safety Checks: We also offer regular maintenance services to ensure the gas
+              regulators remain in top condition, preventing malfunctions or safety hazards.</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- end service section -->
 
@@ -214,12 +326,14 @@
                 Clean Energy
               </h4>
               <p>
-                Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin
-                words, combined with a handful
+                Welcome to <strong>Clean Energy</strong>, a leading Import & Export Trading Company based in Veraval,
+                Gujarat, India.
+                With a dedication to excellence, we serve as a trusted supplier of high-quality and cost-effective
+                products across diverse industries.
               </p>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3 mx-auto">
+          <div class="col-md-6 col-lg-2 mx-auto">
             <div class="info_link_box">
               <h4>
                 Links
@@ -234,7 +348,7 @@
                 <a class="" href="service.html">
                   Services
                 </a>
-                <a class="" href="product.html">
+                <a class="" href="index.html#product1">
                   Products
                 </a>
                 <a class="" href="contact.html">
@@ -254,7 +368,7 @@
               </button>
             </form>
           </div> -->
-          <div class="col-md-6 col-lg-3 mb-0 ml-auto">
+          <div class="col-md-6 col-lg-5 mb-0 ml-lg-auto">
             <div class="info_contact">
               <h4>
                 Address
@@ -264,18 +378,26 @@
                   <i class="fa fa-map-marker" aria-hidden="true"></i>
                   <span>
                     Location
+                    <p>GROUND FLOOR, PLOT NO. 11, Bhalpara Road, NEARBY PAEL NI WAADI BHALPARA, SURVEY NO. 10,
+                      47/1, 50, 51
+                      AND 383, Bhalpara, Gir Somnath, Gujarat, 362268
+                    </p>
+                    <p>28, AKSHAR INDUSTRIAL ESTATE B/H, Odhav Rd, Gokul Nagar, Odhav Industrial Estate, Vastral,
+                      Ahmedabad, Gujarat 382410
+                    </p>
                   </span>
                 </a>
                 <a href="">
                   <i class="fa fa-phone" aria-hidden="true"></i>
                   <span>
-                    Call +01 1234567890
+                    Call +91 7698780540
                   </span>
                 </a>
                 <a href="">
                   <i class="fa fa-envelope" aria-hidden="true"></i>
                   <span>
-                    demo@gmail.com
+                    Mail info@cleanenergys.in
+                    cleanenergy033@gmail.com
                   </span>
                 </a>
               </div>
@@ -310,9 +432,9 @@
         </p>
       </div>
     </footer>
+    <!-- footer section -->
     <a href="#" id="scroll" style="display: none;"><span></span></a>
 
-    <!-- footer section -->
   </div>
 
   <!-- jQery -->

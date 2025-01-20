@@ -131,6 +131,9 @@
     border-radius: 50px;
     /* top: 35px; */
   }
+  .slider_content .detail-box h1 {
+    font-size: 22px;
+}
 }
 
 @media (max-width: 480px) {
