@@ -277,7 +277,8 @@
                                 Clean Energy
                             </h4>
                             <p>
-                                Welcome to <strong>Clean Energy</strong>, a leading Import & Export Trading Company
+                                Welcome to <strong>Clean Energy</strong>, a leading Import & Export Trading and
+                                Manufacturing Company
                                 based in Gujarat,
                                 India.
                             </p>
@@ -397,6 +398,11 @@
             </div>
         </footer>
         <!-- footer section -->
+        <a href="https://wa.me/7698780540" id="whatsapp" target="_blank">
+            <img src="../images/whatsapp.gif" alt="WhatsApp">
+        </a>
+
+        <!-- Scroll Button -->
         <a href="#" id="scroll" style="display: none;"><span></span></a>
 
     </div>
@@ -435,10 +441,13 @@
             $(window).scroll(function () {
                 if ($(this).scrollTop() > 100) {
                     $('#scroll').fadeIn();
+                    $('#whatsapp').fadeIn(); // Show WhatsApp button
                 } else {
                     $('#scroll').fadeOut();
+                    $('#whatsapp').fadeOut(); // Hide WhatsApp button
                 }
             });
+
             $('#scroll').click(function () {
                 $("html, body").animate({ scrollTop: 0 }, 600);
                 return false;

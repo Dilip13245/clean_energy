@@ -103,26 +103,26 @@
                             <div class="row">
                                 <div class="col-6 p-0">
                                     <div class="product_main_img product_right_img">
-                                        <img src="../images/coolent-gel/coolent-gel4-removebg-preview.png"
-                                            style="object-fit: contain;" alt="product img">
+                                        <img src="../images/coolent-gel/coolent-gel4.jpg" style="object-fit: contain;"
+                                            alt="product img">
                                     </div>
                                 </div>
                                 <div class="col-6 p-0">
                                     <div class="product_main_img product_right_img">
-                                        <img src="../images/coolent-gel/coolent-gel5-removebg-preview.png"
-                                            style="object-fit: contain;" alt="product img">
+                                        <img src="../images/coolent-gel/coolent-gel.jpg" style="object-fit: contain;"
+                                            alt="product img">
                                     </div>
                                 </div>
                                 <div class="col-6 p-0">
                                     <div class="product_main_img product_right_img">
-                                        <img src="../images/coolent-gel/coolent-gel2-removebg-preview.png"
-                                            style="object-fit: contain;" alt="product img">
+                                        <img src="../images/coolent-gel/coolent-gel2.jpg" style="object-fit: contain;"
+                                            alt="product img">
                                     </div>
                                 </div>
                                 <div class="col-6 p-0">
                                     <div class="product_main_img product_right_img">
-                                        <img src="../images/coolent-gel/coolent-gel2-removebg-preview.png"
-                                            style="object-fit: contain;" alt="product img">
+                                        <img src="../images/coolent-gel/coolent-gel6.jpg" style="object-fit: contain;"
+                                            alt="product img">
                                     </div>
                                 </div>
                             </div>
@@ -131,7 +131,8 @@
                 </div>
                 <div class="col-12 mt-5" id="coolentGel">
                     <div class="detail-box">
-                        <h3 class="fade-in"><strong>Wire-Cutting Electric Discharge Machine Cooling Liquid/Gel</strong>
+                        <h3 class="fade-in"><strong>Wire-Cutting Electric Discharge Machine Cooling
+                                Liquid/Gel (EDM GEL)</strong>
                         </h3><br>
                         <p class="slide-in">
                             <strong>Product Name:</strong> Wire-Cutting Electric Discharge Machine Cooling Liquid/Gel
@@ -204,7 +205,8 @@
                                 Clean Energy
                             </h4>
                             <p>
-                                Welcome to <strong>Clean Energy</strong>, a leading Import & Export Trading Company
+                                Welcome to <strong>Clean Energy</strong>, a leading Import & Export Trading and
+                                Manufacturing Company
                                 based in Gujarat,
                                 India.
                             </p>
@@ -324,6 +326,11 @@
             </div>
         </footer>
         <!-- footer section -->
+        <a href="https://wa.me/7698780540" id="whatsapp" target="_blank">
+            <img src="../images/whatsapp.gif" alt="WhatsApp">
+        </a>
+
+        <!-- Scroll Button -->
         <a href="#" id="scroll" style="display: none;"><span></span></a>
 
     </div>
@@ -363,10 +370,13 @@
             $(window).scroll(function () {
                 if ($(this).scrollTop() > 100) {
                     $('#scroll').fadeIn();
+                    $('#whatsapp').fadeIn(); // Show WhatsApp button
                 } else {
                     $('#scroll').fadeOut();
+                    $('#whatsapp').fadeOut(); // Hide WhatsApp button
                 }
             });
+
             $('#scroll').click(function () {
                 $("html, body").animate({ scrollTop: 0 }, 600);
                 return false;

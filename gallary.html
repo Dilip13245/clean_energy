@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Gallery</title>
+    <style>
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            padding: 1rem;
+        }
+
+        .gallery figure {
+            position: relative;
+            overflow: hidden;
+            margin: 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .gallery figure:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery figcaption {
+            position: absolute;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            width: 100%;
+            text-align: center;
+            padding: 0.5rem;
+            font-size: 1rem;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery figure:hover figcaption {
+            opacity: 1;
+        }
+
+        #fullscreenOverlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        #fullscreenOverlay img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 8px;
+        }
+
+        #closeOverlay {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            font-size: 2rem;
+            color: white;
+            cursor: pointer;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .gallery figcaption {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Responsive Image Gallery</h1>
+    <ul class="gallery">
+        <figure>
+            <img src="./images/about-img.png" alt="Sample Image 1">
+            <figcaption>Sample Image 1</figcaption>
+        </figure>
+        <figure>
+            <img src="./images/about-img.png" alt="Sample Image 2">
+            <figcaption>Sample Image 2</figcaption>
+        </figure>
+        <figure>
+            <img src="./images/gas_regu.jpeg" alt="Sample Image 3">
+            <figcaption>Sample Image 3</figcaption>
+        </figure>
+        <figure>
+            <img src="./images/about-img.png" alt="Sample Image 4">
+            <figcaption>Sample Image 4</figcaption>
+        </figure>
+        <figure>
+            <img src="./images/about-img.png" alt="Sample Image 5">
+            <figcaption>Sample Image 5</figcaption>
+        </figure>
+        <figure>
+            <img src="./images/about-img.png" alt="Sample Image 1">
+            <figcaption>Sample Image 1</figcaption>
+        </figure>
+        <figure>
+            <img src="./images/about-img.png" alt="Sample Image 2">
+            <figcaption>Sample Image 2</figcaption>
+        </figure>
+        <figure>
+            <img src="./images/gas_regu.jpeg" alt="Sample Image 3">
+            <figcaption>Sample Image 3</figcaption>
+        </figure>
+        <figure>
+            <img src="./images/about-img.png" alt="Sample Image 4">
+            <figcaption>Sample Image 4</figcaption>
+        </figure>
+        <figure>
+            <img src="./images/about-img.png" alt="Sample Image 5">
+            <figcaption>Sample Image 5</figcaption>
+        </figure>
+        <figure>
+            <img src="./images/about-img.png" alt="Sample Image 1">
+            <figcaption>Sample Image 1</figcaption>
+        </figure>
+        <figure>
+            <img src="./images/about-img.png" alt="Sample Image 2">
+            <figcaption>Sample Image 2</figcaption>
+        </figure>
+        <figure>
+            <img src="./images/gas_regu.jpeg" alt="Sample Image 3">
+            <figcaption>Sample Image 3</figcaption>
+        </figure>
+    </ul>
+
+    <!-- Fullscreen Overlay -->
+    <div id="fullscreenOverlay">
+        <img id="fullscreenImage" src="" alt="Fullscreen Image">
+        <span id="closeOverlay">&times;</span>
+    </div>
+
+    <script>
+        // Select all gallery images
+        const galleryImages = document.querySelectorAll('.gallery img');
+        const overlay = document.getElementById('fullscreenOverlay');
+        const fullscreenImage = document.getElementById('fullscreenImage');
+        const closeOverlay = document.getElementById('closeOverlay');
+
+        galleryImages.forEach(img => {
+            img.addEventListener('click', () => {
+                fullscreenImage.src = img.src;
+                overlay.style.display = 'flex';
+            });
+        });
+
+        closeOverlay.addEventListener('click', () => {
+            overlay.style.display = 'none';
+        });
+
+        overlay.addEventListener('click', (e) => {
+            if (e.target !== fullscreenImage) {
+                overlay.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+
+</html>

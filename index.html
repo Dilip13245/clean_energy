@@ -411,7 +411,6 @@
   <!-- end service section -->
 
   <!-- case section -->
-
   <section class="case_section layout_padding Gallery_sec gray_bg">
     <div class="container">
       <div class="heading_container mb-4">
@@ -433,6 +432,10 @@
           </div>
         </div>
       </div>
+      <!-- "View Gallery" Button -->
+      <div class="text-center mt-4">
+        <button id="openGalleryBtn" class="btn">View Gallery</button>
+      </div>
     </div>
     <!-- Fullscreen Overlay -->
     <div id="fullscreenOverlay" class="fullscreen-overlay">
@@ -440,8 +443,60 @@
       <span id="closeOverlay">&times;</span>
     </div>
   </section>
-
-
+  <div id="galleryModal">
+    <div class="modal-content ">
+      <span id="closeModal" class="close-btn">&times;</span>
+      <div class="gallery">
+        <figure>
+          <img src="./images/coolent_gel.jpeg" alt="Coolent Gel">
+          <figcaption>Coolent Gel</figcaption>
+        </figure>
+        <figure>
+          <img src="./images/gas_regu.jpeg" alt="Gas Regulator">
+          <figcaption>Gas Regulator</figcaption>
+        </figure>
+        <figure>
+          <img src="./images/custom_equ.jpeg" alt="Custom Equipment">
+          <figcaption>Custom Equipment</figcaption>
+        </figure>
+        <figure>
+          <img src="./images/ciscute.jpeg" alt="Ciscute">
+          <figcaption>Ciscute</figcaption>
+        </figure>
+        <figure>
+          <img src="./images/water_tank.jpeg" alt="Water Tank">
+          <figcaption>Water Tank</figcaption>
+        </figure>
+        <figure>
+          <img src="./images/custom_equ.jpeg" alt="Custom Equipment">
+          <figcaption>Custom Equipment</figcaption>
+        </figure>
+        <figure>
+          <img src="./images/custom_equ.jpeg" alt="Custom Equipment">
+          <figcaption>Custom Equipment</figcaption>
+        </figure>
+        <figure>
+          <img src="./images/about-img.png" alt="Custom Equipment">
+          <figcaption>Custom Equipment</figcaption>
+        </figure>
+        <figure>
+          <img src="./images/custom_equ.jpeg" alt="Custom Equipment">
+          <figcaption>Custom Equipment</figcaption>
+        </figure>
+        <figure>
+          <img src="./images/about-img.png" alt="Custom Equipment">
+          <figcaption>Custom Equipment</figcaption>
+        </figure>
+        <figure>
+          <img src="./images/custom_equ.jpeg" alt="Custom Equipment">
+          <figcaption>Custom Equipment</figcaption>
+        </figure>
+        <figure>
+          <img src="./images/about-img.png" alt="Custom Equipment">
+        </figure>
+      </div>
+    </div>
+  </div>
   <!-- --------------------------------slider section -------------------------- -->
   <section class="layout_padding maincard_slider company_logo_slider">
     <div class="container">
@@ -462,13 +517,8 @@
             </div>
             <div class="slide"><img src="./images/client3.jpeg" alt="Slide 3" />
             </div>
-            <div class="slide"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" alt="Slide 4" />
-            </div>
-            <div class="slide"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" alt="Slide 5" />
-            </div>
-            <div class="slide"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" alt="Slide 6" />
-            </div>
-            <div class="slide"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" alt="Slide 7" />
+            <div class="slide" style="background-color: rgba(0, 0, 0, 0.8); padding: 5px;">
+              <img src="./images/stplil_client.png" alt="Slide 4" />
             </div>
 
             <!-- Duplicate slides for smooth scrolling -->
@@ -478,13 +528,8 @@
             </div>
             <div class="slide"><img src="./images/client3.jpeg" alt="Slide 3" />
             </div>
-            <div class="slide"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" alt="Slide 4" />
-            </div>
-            <div class="slide"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" alt="Slide 5" />
-            </div>
-            <div class="slide"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" alt="Slide 6" />
-            </div>
-            <div class="slide"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" alt="Slide 7" />
+            <div class="slide" style="background-color: rgba(0, 0, 0, 0.8); padding: 5px;">
+              <img src="./images/stplil_client.png" alt="Slide 4" />
             </div>
           </div>
         </div>
@@ -492,51 +537,6 @@
     </div>
   </section>
   <!-- end case section -->
-
-  <!-- contact section -->
-  <!-- <section class="contact_section layout_padding">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-5 col-lg-4 offset-md-1">
-          <div class="form_container">
-            <div class="heading_container">
-              <h2>
-                Request A Call back
-              </h2>
-            </div>
-            <form action="">
-              <div>
-                <input type="text" placeholder="Full Name " />
-              </div>
-              <div>
-                <input type="email" placeholder="Email" />
-              </div>
-              <div>
-                <input type="text" placeholder="Phone number" />
-              </div>
-              <div>
-                <input type="text" class="message-box" placeholder="Message" />
-              </div>
-              <div class="d-flex ">
-                <button>
-                  SEND
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-7 px-0">
-          <div class="map_container">
-            <div class="map">
-              <div id="googleMap"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
-  <!-- end contact section -->
 
   <div class="footer_container">
     <!-- info section -->
@@ -550,7 +550,8 @@
                 Clean Energy
               </h4>
               <p>
-                Welcome to <strong>Clean Energy</strong>, a leading Import & Export Trading Company based in Gujarat,
+                Welcome to <strong>Clean Energy</strong>, a leading Import & Export Trading and Manufacturing Company
+                based in Gujarat,
                 India.
               </p>
             </div>
@@ -571,7 +572,7 @@
                 <a class="" href="service.html">
                   Services
                 </a>
-                <a class="" href="product.html">
+                <a class="" href="index.html#product1">
                   Products
                 </a>
                 <a class="" href="contact.html">
@@ -667,6 +668,11 @@
       </div>
     </footer>
     <!-- footer section -->
+    <a href="https://wa.me/7698780540" id="whatsapp" target="_blank">
+      <img src="./images/whatsapp.gif" alt="WhatsApp">
+    </a>
+
+    <!-- Scroll Button -->
     <a href="#" id="scroll" style="display: none;"><span></span></a>
 
   </div>
@@ -759,10 +765,13 @@
       $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
           $('#scroll').fadeIn();
+          $('#whatsapp').fadeIn(); // Show WhatsApp button
         } else {
           $('#scroll').fadeOut();
+          $('#whatsapp').fadeOut(); // Hide WhatsApp button
         }
       });
+
       $('#scroll').click(function () {
         $("html, body").animate({ scrollTop: 0 }, 600);
         return false;
@@ -795,6 +804,30 @@
         overlay.style.display = 'none';
       }
     });
+  </script>
+  <script>
+    // Get modal and related elements
+    const galleryModal = document.getElementById('galleryModal');
+    const openGalleryBtn = document.getElementById('openGalleryBtn');
+    const closeModal = document.getElementById('closeModal');
+
+    // Open modal when button is clicked
+    openGalleryBtn.addEventListener('click', () => {
+      galleryModal.style.display = 'flex';
+    });
+
+    // Close modal when close button is clicked
+    closeModal.addEventListener('click', () => {
+      galleryModal.style.display = 'none';
+    });
+
+    // Close modal when clicking outside the content
+    galleryModal.addEventListener('click', (e) => {
+      if (e.target === galleryModal) {
+        galleryModal.style.display = 'none';
+      }
+    });
+
   </script>
 
 </body>
