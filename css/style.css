@@ -1670,9 +1670,9 @@ color: #ffffff;
   padding: 5px; /* Space around the icon */
 }
 #whatsapp:hover {
-  background-color: #128c7e; /* Slightly darker green on hover */
-}
+  transform: scale(1.15);
 
+}
 
 .case_section .container .btn {
   display: inline-block;
